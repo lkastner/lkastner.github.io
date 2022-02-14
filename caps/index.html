@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>n-cap game</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="menu">
+<table>
+<tr>
+<td>
+Number of points in current cap:
+<strong id="counter">0</strong>
+</td>
+<td>
+Dimension:
+<textarea id="desiredDim" style="width: 25px; height: 25px; resize: none; rows:1;">
+3
+</textarea>
+<button id="submitBtn">
+Set dimension
+</button>
+</td>
+<td>
+<button id="saveBtn">
+Save
+</button>
+</td>
+<td>
+<button id="affineBtn">
+AffSp
+</button>
+</td>
+<td>
+<button id="balanceBtn">
+Balance
+</button>
+</td>
+</tr>
+<tr>
+<td>
+Number of possible points:
+<strong id="available">0</strong>
+</td>
+<td>
+<input type="file" id="files" name="files[]" />
+</td>
+<td>
+<button id="reverseBtn">
+Reverse
+</button>
+</td>
+<td>
+<button id="rotateBtn">
++
+</button>
+</td>
+</tr>
+</table>
+</div>
+<div id="board" style="text-align:center">
+<br>
+<canvas id="set" width=1200 height=500>
+Does it work?
+</canvas>
+<script type="text/javascript" src="gameplay.js"></script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="drawing.js"></script>
+</div>
+</body>
+</html>
